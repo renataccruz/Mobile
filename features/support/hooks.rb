@@ -4,7 +4,9 @@ require "date"
 Before do
   visit "./"
   find("#adopt-accept-all-button").click
-  page.current_window.resize_to(390, 844)
+  page.current_window.resize_to(375, 667)
+  @HomePage = HomePage.new
+  @LoginPage = LoginPage.new
 end
 
 # After do |cenario|
